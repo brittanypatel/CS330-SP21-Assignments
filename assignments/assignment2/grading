@@ -1,0 +1,9 @@
+20 pts: Client can successfully send a message to the router. 
+  This message includes (client's IP address, port number, the server's IP address, and port number)
+20 pts: Router can successfully forward the received message from the client to the server. Note: new socket should be created, and the message received should be checked but NOT modified.
+10 pts: The server verifies the destination IP address and port number IN THE MESSAGE. If both of them are correct, prints out the message; otherwise, prints out an ERROR message.
+10 pts: a report. This report should include, but not limited to, (1) team members, (2) task distribution - who did what, (3) challenges encountered, (4) how you tackled the challenges, (5) the resources used to do the project and solve the problems, (6) lessons learned from this project, (7) anything you think can improve the project (or other fun ideas you would like to implement in the project).
++5 pts: implement the forwarding table in the router
++5 pts: add MAC addresses to all devices, and add the mechanism to change the MAC addresses with respect to the links
++5 pts: once the server receives the message from the client, sends a response message back by adding a prefix "[SERVER RECEIVED]: " to the message. Note: don't forget that in the response message, the sender is now the server and the receiver is the client. The server would get the client's IP addrress and port number from the received message.
+-25 pts: code that does not compile and run is graded harshly; if you want partial credits, make sure your programs compile and run!
